@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+group = 'com.krutna.test'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.clickhouse:clickhouse-jdbc:0.9.1"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = "com.krutna.mre.clickhousejdbc.Mre"
+}
