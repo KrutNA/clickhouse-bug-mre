@@ -34,7 +34,7 @@ public class Mre {
             """;
 
     private static String getEndpoint() {
-        return "jdbc:clickhouse:http://clickhouse:8123";
+        return "jdbc:clickhouse:http://localhost:8123";
     }
 
     private static Connection getConnection() throws SQLException {
